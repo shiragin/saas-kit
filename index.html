@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://kit.fontawesome.com/c7cd36f5b5.js" crossorigin="anonymous"></script> -->
+  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="favicon-96x96.png">
+  <title>ITC SaaS Assignment</title>
+</head>
+
+<body>
+  <div class="container with-sidebar">
+
+    <section class="sidebar">
+
+      <div class="side-main">
+
+        <h1>SaaS Kit</h1>
+
+        <div class="user">
+          <img src="img/user-img.png" alt="Profile image">
+          <div class="user-details">
+            <h3>Sierra Ferguson</h3>
+            <p>s.ferguson@gmail.com</p>
+          </div>
+        </div>
+        <div class="dashboard">
+          <div class="dashboard-item active">
+            <a href="#">
+              <img src="img/ic-dashboard.svg" alt="Dashboard icon" class="icon">
+              <p>Dashboard</p>
+            </a>
+          </div>
+          <div class="dashboard-item">
+            <a href="#">
+              <img src="img/ic-tasks.svg" alt="Tasks icon" class="icon">
+              <p>Tasks</p>
+            </a>
+          </div>
+          <div class="dashboard-item">
+            <a href="#">
+              <img src="img/ic-email.svg" alt="Email icon" class="icon">
+
+              <p>Email</p>
+            </a>
+          </div>
+          <div class="dashboard-item">
+            <a href="#">
+              <img src="img/ic-contacts.svg" alt="Contacts icon" class="icon">
+              <p>Contacts</p>
+            </a>
+          </div>
+          <div class="dashboard-item">
+            <a href="#">
+              <img src="img/ic-chat.svg" alt="Chat icon" class="icon">
+
+              <p>Chat</p>
+            </a>
+          </div>
+          <div class="dashboard-item">
+            <a href="#">
+              <img src="img/ic-deals.svg" alt="Deals icon" class="icon">
+              <p>Deals</p>
+            </a>
+          </div>
+          <div class="dashboard-item">
+            <a href="#">
+              <img src="img/ic-settings.svg" alt="Settings icon" class="icon">
+              <p>Settings</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="side-toggle">
+      <a href="#">
+        <img src="img/ic-toggle.svg" alt="Toggle icon" class="icon">
+
+        <p>Toggle sidebar</p>
+      </a>
+    </div>
+
+    <section class="search">
+      <div class="searchbar">
+        <img src="img/ic-search.svg" alt="Search Icon" class="icon">
+        <input type="text" name="search" placeholder="Global Search">
+      </div>
+      <img src="img/ic-notifications.svg" alt="Search Icon" class="icon-big">
+    </section>
+
+    <section class="main">
+      <div class="main-top">
+        <div class="wrapper">
+          <p>8 tasks completed out of 10</p>
+          <div class="dropdown">
+
+            <label for="showtasks">Show: </label>
+            <select name="showtasks" id="showtasks">
+              <option value="day">Today</option>
+              <option value="week" selected>This week</option>
+              <option value="month">This month</option>
+              <option value="year">This year</option>
+            </select>
+          </div>
+        </div>
+        <div class="bar-wrapper">
+          <div class="bar"></div>
+        </div>
+        <h2>23 December, Sunday</h2>
+        <div class="calendar">
+          <div class="day active">
+            <p class="day-name">Sun</p>
+            <p class="day-num">23</p>
+          </div>
+          <div class="day">
+            <p class="day-name">Mon</p>
+            <p class="day-num">24</p>
+          </div>
+          <div class="day">
+            <p class="day-name">Tue</p>
+            <p class="day-num">25</p>
+          </div>
+          <div class="day">
+            <p class="day-name">Wed</p>
+            <p class="day-num">26</p>
+          </div>
+          <div class="day">
+            <p class="day-name">Thu</p>
+            <p class="day-num">27</p>
+          </div>
+          <div class="day">
+            <p class="day-name">Fri</p>
+            <p class="day-num">28</p>
+          </div>
+          <div class="day">
+            <p class="day-name">Sat</p>
+            <p class="day-num">29</p>
+          </div>
+        </div>
+      </div>
+      <div class="main-bottom">
+        <div class="cards">
+          <div class="card">
+            <div class="wrapper header">
+              <h2>Send benefit review by Sunday</h2>
+              <p>Reminder</p>
+            </div>
+            <p><span class="light">Due date:</span> December 23, 2018</p>
+            <div class="user-task">
+              <div class="user-details">
+                <img src="img/main-img1.png" alt="User image">
+                <p>George Fields</p>
+              </div>
+              <button class="btn btn-completed">Completed</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="wrapper header">
+              <h2>Invite to office meet-up</h2>
+              <p>Call</p>
+            </div>
+            <p><span class="light">Due date:</span> December 23, 2018</p>
+            <div class="user-task">
+              <div class="user-details">
+                <img src="img/main-img2.png" alt="User image">
+                <p>Rebecca Moore</p>
+              </div>
+              <div class="wrapper-btn">
+                <img src="img/ic-edit.svg" alt="Edit icon">
+                <img src="img/ic-delete.svg" alt="Delete icon">
+                <button class="btn btn-ended">Ended</button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="wrapper header">
+              <h2>Office meet-up</h2>
+              <p>Event</p>
+            </div>
+            <p><span class="light">Due date:</span> December 23, 2018</p>
+            <div class="user-task">
+              <div class="user-details">
+                <img src="img/main-img3.png" alt="User image">
+                <p>Lindsey Stroud</p>
+              </div>
+              <button class="btn btn-completed">Completed</button>
+            </div>
+          </div>
+        </div>
+        <h3>Show more</h3>
+      </div>
+    </section>
+
+    <section class="deals">
+      <div class="wrapper">
+        <h2>Deals</h2>
+        <div class="dropdown">
+          <label for="showtasks">Show: </label>
+          <select name="showtasks" id="showtasks">
+            <option value="Daily">Today</option>
+            <option value="Weekly">This week</option>
+            <option value="Monthly" selected>This month</option>
+            <option value="Yearly">This year</option>
+          </select>
+        </div>
+      </div>
+      <div class="graph">
+        <div class="wrapper">
+          <div class="circle"></div>
+          <p>Closed deals</p>
+        </div>
+        <img src="img/deals_graphic.png" alt="Deals graph">
+      </div>
+    </section>
+
+    <section class="tasks">
+      <div class="wrapper">
+        <h2>Tasks</h2>
+        <div class="dropdown">
+          <label for="showtasks">Show: </label>
+          <select name="showtasks" id="showtasks">
+            <option value="day">Today</option>
+            <option value="week">This week</option>
+            <option value="month" selected>This month</option>
+            <option value="year">This year</option>
+          </select>
+        </div>
+      </div>
+      <div class="graph">
+        <div class="wrapper">
+          <img src="img/tasks-graphic.png" alt="Tasks graph">
+          <div class="list-wrapper">
+            <div class="wrapper">
+              <div class="circle circle-orange"></div>
+              <p>Active</p>
+            </div>
+            <div class="wrapper">
+              <div class="circle circle-green"></div>
+              <p>Completed</p>
+            </div>
+            <div class="wrapper">
+              <div class="circle circle-red"></div>
+              <p>Ended</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
