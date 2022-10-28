@@ -114,7 +114,7 @@ select:focus {
   top: 0;
   left: 0;
   transform: translateX(-2000px);
-  transition: transform 0.4s linear;
+  transition: transform 0.8s linear;
 }
 
 .sidebar h1 {
