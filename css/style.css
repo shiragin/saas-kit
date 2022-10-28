@@ -105,10 +105,16 @@ select:focus {
   justify-content: space-between;
   border-radius: 0;
   z-index: 999;
+  transition: transform 0.5s linear -0.5s;
+  position: unset;
 }
 
 .sidebar.hidden {
-  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-2000px);
+  transition: transform 0.4s linear;
 }
 
 .sidebar h1 {
@@ -414,6 +420,12 @@ select:focus {
   color: #fff;
   border-radius: 5px;
   margin-left: 4px;
+}
+
+.card .user-task .btn:active,
+.main .main-bottom h3:active,
+.search > img:active {
+  transform: scale(95%);
 }
 
 .card .user-task .btn.btn-completed {
