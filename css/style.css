@@ -171,7 +171,8 @@ select:focus {
   color: #109cf1;
 }
 
-.sidebar .dashboard-item:hover .icon {
+.sidebar .dashboard-item:hover .icon,
+.sidebar .dashboard-item.active .icon {
   filter: invert(48%) sepia(20%) saturate(5026%) hue-rotate(176deg)
     brightness(99%) contrast(91%);
 }
