@@ -43,7 +43,7 @@ body {
 section,
 .main .card {
   background-color: #fff;
-  box-shadow: 0 0 10px rgb(106, 112, 126, 0.2);
+  box-shadow: 0 0 8px rgb(106, 112, 126, 0.2);
   border-radius: 5px;
 }
 
@@ -175,6 +175,7 @@ select:focus {
 .sidebar .dashboard-item.active p,
 .sidebar .dashboard-item:hover {
   color: #109cf1;
+  transition: color 0 0.1s;
 }
 
 .sidebar .dashboard-item:hover .icon,
