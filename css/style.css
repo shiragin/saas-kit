@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #192a3e;
 }
 
 body {
@@ -12,20 +11,6 @@ body {
   line-height: 1.2;
   background-color: #e5e5e5;
   min-height: 100vh;
-}
-
-a,
-a:visited,
-a:active,
-a:link {
-  color: #192a3e;
-}
-
-a p,
-a:visited p,
-a:active p,
-a:link p {
-  color: #192a3e;
 }
 
 /* Grid areas */
@@ -184,11 +169,15 @@ select:focus {
   gap: 16px;
 }
 
-.sidebar .dashboard-item.active,
-.sidebar .dashboard-item.active p,
-.sidebar .dashboard-item:hover {
+.sidebar .dashboard-item a p,
+.sidebar .dashboard-item a:visited p {
+  color: #334d6e;
+}
+
+.sidebar .dashboard-item.active a p,
+.sidebar .dashboard-item.active a p,
+.sidebar .dashboard-item a:hover p {
   color: #109cf1;
-  transition: color 0 0.1s;
 }
 
 .sidebar .dashboard-item:hover .icon,
@@ -196,11 +185,6 @@ select:focus {
 .wrapper-btn img:hover {
   filter: invert(48%) sepia(20%) saturate(5026%) hue-rotate(176deg)
     brightness(99%) contrast(91%);
-}
-
-.sidebar .dashboard-item a:visited,
-.side-toggle a:visited {
-  color: inherit;
 }
 
 .sidebar .dashboard-item:nth-last-child(2) {
