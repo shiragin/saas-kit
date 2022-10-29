@@ -21,7 +21,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 60px 1fr 1fr;
+  grid-template-rows: 60px calc(1fr - 30px) calc(1fr - 30px);
   grid-template-areas:
     'search search search search search'
     'main   main   main   deals  deals'
@@ -264,6 +264,9 @@ select:focus {
   margin: 30px 15px 30px 30px;
   height: auto;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .main .main-top {
@@ -341,12 +344,11 @@ select:focus {
 }
 
 .main .main-bottom {
-  height: 70%;
+  height: 100%;
   border-top: 1px solid rgba(106, 112, 126, 0.2);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  overflow: hidden;
+  justify-content: space-between;
 }
 
 /* Main cards */
@@ -456,7 +458,7 @@ select:focus {
   font-weight: 600;
   color: #109cf1;
   text-align: center;
-  /* margin: 0 0 14px 0; */
+  margin: 0 0 20px 0;
 }
 
 /* Deals section */
@@ -481,6 +483,7 @@ select:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 10px;
 }
 
 .graph .wrapper {
@@ -502,9 +505,8 @@ select:focus {
 
 .graph img {
   padding: 10px 20px 20px;
-  width: 100%;
+  min-width: 100%;
   height: auto;
-  max-height: 80%;
   object-fit: fill;
 }
 
@@ -521,7 +523,8 @@ select:focus {
 }
 
 .tasks .graph img {
-  width: 60%;
+  min-width: 60%;
+  max-height: 80%;
   padding: 0;
   object-fit: contain;
 }
@@ -582,7 +585,7 @@ select:focus {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .container,
   .container.with-sidebar {
     grid-template-columns: 100%;
