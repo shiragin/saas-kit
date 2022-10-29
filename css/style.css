@@ -257,6 +257,7 @@ select:focus {
   grid-area: main;
   margin: 40px 15px 30px 30px;
   height: auto;
+  overflow: hidden;
 }
 
 .main .main-top {
@@ -454,6 +455,12 @@ select:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  overflow: hidden;
+}
+
+.deals .wrapper,
+.tasks .wrapper {
+  min-height: 70px;
 }
 
 .graph {
@@ -482,7 +489,7 @@ select:focus {
 }
 
 .graph img {
-  padding: 10px 24px;
+  padding: 10px 24px 24px;
   width: 100%;
   height: auto;
   max-height: 80%;
@@ -629,6 +636,12 @@ select:focus {
 
   .card .user-task .wrapper-btn img:first-child {
     display: none;
+  }
+
+  .deals .wrapper,
+  .tasks .wrapper {
+    min-height: 20px;
+    padding: 16px 24px;
   }
 
   .deals h2,
