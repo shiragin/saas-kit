@@ -21,7 +21,7 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 60px calc(1fr - 30px) calc(1fr - 30px);
+  grid-template-rows: 60px 1fr 1fr;
   grid-template-areas:
     'search search search search search'
     'main   main   main   deals  deals'
@@ -221,6 +221,7 @@ select:focus {
 /* Search bar */
 
 .search {
+  height: 60px;
   grid-area: search;
   padding: 10px 50px;
   display: flex;
