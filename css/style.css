@@ -178,7 +178,8 @@ select:focus {
 }
 
 .sidebar .dashboard-item:hover .icon,
-.sidebar .dashboard-item.active .icon {
+.sidebar .dashboard-item.active .icon,
+.wrapper-btn img:hover {
   filter: invert(48%) sepia(20%) saturate(5026%) hue-rotate(176deg)
     brightness(99%) contrast(91%);
 }
@@ -424,7 +425,8 @@ select:focus {
 
 .card .user-task .btn:active,
 .main .main-bottom h3:active,
-.search > img:active {
+.search > img:active,
+.wrapper-btn img:active {
   transform: scale(95%);
 }
 
