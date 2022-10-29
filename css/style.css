@@ -659,6 +659,10 @@ select:focus {
     padding: 16px 20px;
   }
 
+  .deals .graph {
+    margin-top: 10px;
+  }
+
   .deals h2,
   .tasks h2 {
     visibility: hidden;
