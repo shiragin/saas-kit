@@ -105,6 +105,7 @@ select:focus {
   z-index: 999;
   transition: transform 0.5s linear -0.5s;
   position: unset;
+  overflow: hidden;
 }
 
 .sidebar.hidden {
@@ -202,6 +203,7 @@ select:focus {
   bottom: 20px;
   left: 32px;
   z-index: 999999;
+  transition: all 0.5s ease;
 }
 
 .side-toggle a,
@@ -210,6 +212,11 @@ select:focus {
   text-decoration: none;
   font-size: 11px;
   color: #c2cfe0;
+}
+
+.sidebar.hidden + .side-toggle {
+  transform: translate(-100px, -30px) rotate(-90deg);
+  transition: all 0.5s ease;
 }
 
 /* Search bar */
