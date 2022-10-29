@@ -105,7 +105,6 @@ select:focus {
   z-index: 999;
   transition: transform 0.5s linear -0.5s;
   position: unset;
-  overflow: hidden;
 }
 
 .sidebar.hidden {
