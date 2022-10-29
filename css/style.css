@@ -458,8 +458,8 @@ select:focus {
   overflow: hidden;
 }
 
-.deals .wrapper,
-.tasks .wrapper {
+.deals > .wrapper,
+.tasks > .wrapper {
   min-height: 70px;
 }
 
