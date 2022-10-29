@@ -10,23 +10,37 @@ body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.2;
   background-color: #e5e5e5;
-  height: 100vh;
+  min-height: 100vh;
+  color: #192a3e;
+}
+
+a,
+a:visited,
+a:active,
+a:link {
+  color: #192a3e;
+}
+
+a p,
+a:visited p,
+a:active p,
+a:link p {
+  color: #192a3e;
 }
 
 /* Grid areas */
 
 .container {
-  max-width: 100vw;
-  height: 100vh;
+  max-width: 100%;
+  min-height: 100%;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 60px 45vh 45vh auto;
+  grid-template-rows: 60px 45vh 45vh;
   grid-template-areas:
     'search search search search search'
     'main   main   main   deals  deals'
-    'main   main   main   tasks  tasks'
-    '....   ....   ....   .....  .....';
+    'main   main   main   tasks  tasks';
 }
 
 .container.with-sidebar {
@@ -34,8 +48,7 @@ body {
   grid-template-areas:
     'sidebar search search search search search'
     'sidebar main   main   main   deals  deals'
-    'sidebar main   main   main   tasks  tasks'
-    'sidebar ....   ....   ....   .....  .....';
+    'sidebar main   main   main   tasks  tasks';
 }
 
 /* General rules for sections */
@@ -99,7 +112,7 @@ select:focus {
 
 .sidebar {
   grid-area: sidebar;
-  min-height: 100%;
+  min-height: 110%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -208,7 +221,8 @@ select:focus {
 }
 
 .side-toggle a,
-.side-toggle a:visited {
+.side-toggle a:visited,
+.side-toggle a:link {
   text-decoration: none;
   font-size: 11px;
   color: #c2cfe0;
